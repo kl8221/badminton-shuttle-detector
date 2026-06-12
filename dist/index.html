@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Shuttlecock YOLO ONNX Demo</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        background: #111;
+        color: white;
+      }
+
+      #container {
+        position: relative;
+        width: 640px;
+        height: 640px;
+        margin: 20px auto;
+        border: 2px solid white;
+      }
+
+      video, canvas {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 640px;
+        height: 640px;
+      }
+
+      video {
+        object-fit: fill;
+      }
+
+      button {
+        padding: 12px 18px;
+        font-size: 16px;
+        margin: 8px;
+      }
+    </style>
+    <script type="module" crossorigin src="/assets/index-BcviG6vZ.js"></script>
+  </head>
+
+  <body>
+    <h1>Shuttlecock Detector</h1>
+
+    <button id="startBtn">Start Camera</button>
+    <p id="status">Model loading...</p>
+
+    <div id="container">
+      <video id="video" autoplay playsinline muted></video>
+      <canvas id="canvas" width="640" height="640"></canvas>
+    </div>
+
+  </body>
+</html>
